@@ -15,5 +15,7 @@ function help {
 }
 function cmds {saps $cmds}
 function nav {python D:\GIT\nav-ninja\nav_ninja.py}
-function connect {python D:\GIT\sqlite\root\main.py}
+function connect {
+    cd D:\GIT\sqlite\root
+    python main.py}
 function scriptorium {python D:\GIT\scriptorium\root\main.py}

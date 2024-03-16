@@ -1,0 +1,26 @@
+# Standard or folder hierarchy
+ssd:
+  HOME:
+    ~settings:
+      - .ignore
+      - commands.sh
+      - map
+      - pull
+      - push
+    apps:
+      - steam
+      - sqlite
+      - vsc
+    arch:
+      - online
+      - local
+    git:
+      - ~dependencies
+      - ~template
+      - nav
+      - sqlite
+      - other_repos
+      - Ω unused
+    OneDrive:
+      - assignments
+      - databases
