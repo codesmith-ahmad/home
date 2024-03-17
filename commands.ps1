@@ -2,10 +2,12 @@
 
 Write-Host "HELLO" $env:COMPUTERNAME `r`n
 
-$cmds = $pwd.path + "\commands.ps1"
+$myhome = $pwd.path
+$cmds = $myhome + "\commands.ps1"
 
 function help {
     echo "Commands:"
+    echo "    `e[92mhome`e[0m: go home"
     echo "    `e[92mcmds`e[0m: modify commands"
     echo "    `e[92mnav`e[0m: Launch navigation"
     echo "    `e[92mconnect`e[0m: Connect to database"
@@ -13,6 +15,7 @@ function help {
     echo ""
     echo "To modify commands: saps $cmds`n"
 }
+function home {cd $myhome}
 function cmds {saps $cmds}
 function nav {python D:\GIT\nav-ninja\nav_ninja.py}
 function connect {
