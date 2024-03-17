@@ -3,7 +3,8 @@
 Write-Host "HELLO" $env:COMPUTERNAME `r`n
 
 $myhome = $pwd.path
-$cmds = $myhome + "\commands.ps1"
+$homeDrive = 'S'
+$cmds = $myhome + "\scripts\xenon.ps1"
 
 function help {
     echo "Commands:"
@@ -17,8 +18,8 @@ function help {
 }
 function home {cd $myhome}
 function cmds {saps $cmds}
-function nav {python D:\GIT\nav-ninja\nav_ninja.py}
+function nav {python S:\git\nav-ninja\nav_ninja.py}
 function connect {
-    cd D:\GIT\sqlite\root
+    cd S:\git\sqlite\root
     python main.py}
-function scriptorium {python D:\GIT\scriptorium\root\main.py}
+function scriptorium {python S:\git\scriptorium\root\main.py}

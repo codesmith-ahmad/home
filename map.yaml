@@ -3,7 +3,9 @@ ssd:
   HOME:
     ~settings:
       - .ignore
-      - commands.sh
+      - scripts:
+        - luminous.ps1
+        - xenon.ps1
       - map
       - pull
       - push
