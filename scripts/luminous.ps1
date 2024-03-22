@@ -17,8 +17,8 @@ function help {
 }
 function home {cd $myhome}
 function cmds {saps $cmds}
-function nav {python D:\GIT\nav-ninja\nav_ninja.py}
+function nav {python D:/GIT/nav-ninja/src/nav_ninja.py}
 function connect {
-    cd D:\GIT\sqlite\root
+    cd D:\GIT\sqlite\src
     python main.py}
-function scriptorium {python D:\GIT\scriptorium\root\main.py}
+function scriptorium {python D:\GIT\scriptorium\src\main.py}
