@@ -7,8 +7,8 @@ ssd: #SAME DRIVE NAME FOR ALL COMPUTERS
         - luminous.ps1
         - xenon.ps1
       - map
-      - pull
-      - push
+      - \!pull
+      - \!push
     apps:
       - steam
       - sqlite
