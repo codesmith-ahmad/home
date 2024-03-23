@@ -16,6 +16,32 @@ function help {
     echo "To modify commands: saps $cmds`n"
 }
 function home {cd $myhome}
+function goto {
+    param(
+        [string]$Location
+    )
+
+    $Paths = @{
+        'gpt' = 'https://chat.openai.com/'
+        'google' = 'https://www.google.com/'
+        'git' = 'D:\git'
+        # Add more predefined paths as needed
+    }
+
+    if ($Paths.ContainsKey($Location)) {
+        $Path = $Paths[$Location]
+        if (Test-Path $Path) {
+            Set-Location $Path
+            Start-Process $Path
+        } elseif ($Path -like 'http*' -or $Path -like 'ftp*') {
+            Start-Process $Path
+        } else {
+            Write-Warning "Path '$Path' does not exist."
+        }
+    } else {
+        Write-Warning "Location '$Location' is not predefined."
+    }
+}
 function cmds {saps $cmds}
 function nav {python D:\git\nav\src\main.py}
 function connect {
