@@ -1,2 +1,6 @@
+apps/
+arch/
+cloud/
+git/
 temp/
 .lesshst

@@ -1,6 +1,6 @@
 # Standard or folder hierarchy
 ssd: #SAME DRIVE NAME FOR ALL COMPUTERS
-  HOME:
+  home:
     ~settings:
       - .ignore
       - scripts:
