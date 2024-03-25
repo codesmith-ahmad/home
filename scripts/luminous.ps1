@@ -44,7 +44,5 @@ function goto {
 }
 function cmds {saps $cmds}
 function nav {python D:\git\nav\src\main.py}
-function connect {
-    cd D:\git\sqlite\src\main.py
-    python main.py}
+function connect {python D:\git\sqlite\src\main.py}
 function scriptorium {python D:\git\scriptorium\src\main.py}
