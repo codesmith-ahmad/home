@@ -3,7 +3,7 @@
 Write-Host "HELLO" $env:COMPUTERNAME `r`n
 
 $myhome = $pwd.path
-$cmds = $myhome + "\scripts\luminous.ps1"
+$cmds = $myhome + "\.cmds\luminous.ps1"
 
 function help {
     echo "Commands:"
@@ -24,7 +24,7 @@ function goto {
     $Paths = @{
         'gpt' = 'https://chat.openai.com/'
         'google' = 'https://www.google.com/'
-        'git' = 'D:\git'
+        'git' = 'D:\home\git'
         # Add more predefined paths as needed
     }
 
@@ -43,6 +43,6 @@ function goto {
     }
 }
 function cmds {saps $cmds}
-function nav {python D:\git\nav\src\main.py}
-function connect {python D:\git\sqlite\src\main.py}
-function scriptorium {python D:\git\scriptorium\src\main.py}
+function nav {python D:\home\git\nav\src\main.py}
+function connect {python D:\home\git\sqlite\src\main.py}
+function scriptorium {python D:\home\git\scriptorium\src\main.py}
