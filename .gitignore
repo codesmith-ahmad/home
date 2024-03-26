@@ -1,9 +1,11 @@
-apps/
-!D:/home/apps/apps
-arch/
-!D:/home/arch/arch
-cloud/
-!D:/home/cloud/cloud
-git/
-!D:/home/git/git
-.lesshst
+# Ignore all files in directories except for the specific files
+apps/*
+arch/*
+cloud/*
+git/*
+
+# Include specific files
+!apps/apps
+!arch/arch
+!cloud/cloud
+!git/git
