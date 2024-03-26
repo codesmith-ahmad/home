@@ -1,6 +1,9 @@
 apps/
+!D:/home/apps/apps
 arch/
+!D:/home/arch/arch
 cloud/
+!D:/home/cloud/cloud
 git/
-temp/
+!D:/home/git/git
 .lesshst
